@@ -1,32 +1,77 @@
-.App {
+.searchinput {
+  padding: 0px 15px;
+}
+
+.searchinput-input {
+  width: 100%;
+}
+
+.has-search .form-control-search {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
   text-align: center;
+  pointer-events: none;
+  color: #aaa;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.has-search .form-control {
+  padding-left: 2.375rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loginButton {
+  text-align: right;
+  border-right: 1px solid white;
+  padding-right: 0.1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.registerButton {
+  padding-left: 0.1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-action {
+  position: absolute;
+  right: 0;
+  top: 210px;
+}
+
+.card-action button {
+  background-color: white;
+  margin-right: 0.2rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+#home-banner {
+  padding: 0;
+}
+
+#home-newproduct,
+#home-bestseller,
+#home-ourproduct,
+#home-favorites {
+  padding: 5px 50px;
+}
+
+#home-newproduct {
+}
+
+#home-bestseller {
+}
+
+#home-ourproduct {
+}
+
+#home-favorites {
+}
+
+.section-title {
+}
+
+#footer {
+  background-color: antiquewhite;
+  padding: 3rem;
 }
