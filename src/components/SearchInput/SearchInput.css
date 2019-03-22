@@ -1,0 +1,18 @@
+.searchinput {
+  margin: 0px 2rem;
+  position: relative;
+}
+
+.searchinput input {
+  width: 100%;
+  border: 1px solid var(--mainColor);
+  border-radius: 5px;
+  padding: 3px 8px;
+}
+
+.searchinput i {
+  position: absolute;
+  right: 0px;
+  padding: 3px 8px;
+  color: var(--mainColor);
+}

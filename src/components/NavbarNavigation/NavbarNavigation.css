@@ -1,0 +1,4 @@
+.nav-link {
+  color: var(--mainColor) !important;
+  font-weight: bold;
+}
