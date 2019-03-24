@@ -1,0 +1,40 @@
+.banner-gradient {
+  position: relative;
+  padding: 2rem 2rem;
+  background-image: linear-gradient(var(--mainColor), var(--secondaryColor));
+}
+
+.bottom-arrow {
+  left: 48.3%;
+  bottom: -3%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--secondaryColor);
+  position: absolute;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari */
+  transform: rotate(45deg);
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--mainColor);
+}
+
+.chat-icon {
+  position: relative;
+  top: 25%;
+  left: 25%;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.chat-button:hover {
+  cursor: pointer;
+}
