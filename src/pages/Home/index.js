@@ -6,7 +6,10 @@ import "./Home.css";
 /* import components */
 import Navbar from "../../components/Navbar/Navbar";
 import Carousel from "../../components/Carousel/Carousel";
-// import NewProduct from "./sections/NewProduct/NewProduct";
+
+/* import sections */
+import Shopping from "./sections/Shopping/Shopping";
+import NewProduct from "./sections/NewProduct/NewProduct";
 
 class Home extends Component {
   render() {
@@ -15,6 +18,10 @@ class Home extends Component {
         <Navbar />
 
         <Carousel />
+
+        <Shopping />
+
+        <NewProduct />
       </div>
     );
   }

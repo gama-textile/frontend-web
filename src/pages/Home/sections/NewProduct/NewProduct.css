@@ -1,13 +1,13 @@
-.text-custom h1 {
+/* .text-custom h1 {
   font-weight: 300;
   letter-spacing: 2px;
-}
+} */
 
-/* .product-list {
+.product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-} */
+}
 
 .title {
   color: var(--mainColor);

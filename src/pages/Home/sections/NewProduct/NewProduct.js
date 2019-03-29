@@ -14,8 +14,7 @@ class NewProduct extends Component {
           <b>New</b> Product
         </h1>
 
-        <div className="row product-list">
-          <Card />
+        <div className="row product__list">
           <Card />
           <Card />
           <Card />

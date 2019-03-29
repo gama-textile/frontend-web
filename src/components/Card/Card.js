@@ -6,18 +6,17 @@ import "./Card.css";
 class Card extends Component {
   render() {
     return (
-      <div className="g-card col-lg-3">
-        <div className="g-card-imagewrapper">
-          <img className="img-fluid" src="img/logo.png" alt="Tulle" />
-          <div className="g-card-actionwrapper">
-            <a className="material-icons g-card-action">favorite_border</a>
-            <a className="material-icons g-card-action">add_shopping_cart</a>
-          </div>
-        </div>
-
-        <div className="g-card-body">
-          <p className="product-title">name oke - kode 001</p>
-          <p className="product-price">Rp. 1.000.000</p>
+      <div className="col-md-3 card__gama">
+        <img
+          src="products/gambar_1.jpg"
+          className="card-img-top"
+          alt="Product"
+        />
+        <div className="card-body">
+          <p className="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
       </div>
     );
