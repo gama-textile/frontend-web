@@ -1,7 +1,7 @@
-.banner-gradient {
+.banner__gradient {
   position: relative;
   padding: 2rem 2rem;
-  background-image: linear-gradient(var(--mainColor), var(--secondaryColor));
+  background-image: linear-gradient(#fd6ea8, #ff758c);
 }
 
 .bottom-arrow {

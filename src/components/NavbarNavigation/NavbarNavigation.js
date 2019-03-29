@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 /* import css Navbar Navigation */
 import "./NavbarNavigation.css";
@@ -7,39 +7,34 @@ import "./NavbarNavigation.css";
 class NavbarNavigation extends Component {
   render() {
     return (
-      <ul className="navbar-nav ml-auto">
+      <ul className="navbar-nav ml-auto nav__li__gama">
         <li className="nav-item">
-          <Link className="nav-link" to="/products">
+          <a href="/" className="nav-link__gama">
             Catalog
-          </Link>
+          </a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/products">
+          <a href="/" className="nav-link__gama">
             About
-          </Link>
+          </a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link loginButton" to="/login">
-            Login
-          </Link>
+          <a href="/" className="nav-link__gama">
+            Register | Login
+          </a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link registerButton" to="/register">
-            Register
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/account">
+          <a className="nav-link__gama" href="/">
             Account
-          </Link>
+          </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">
+          <a className="nav-link__gama" href="/">
             <i className="material-icons">notifications</i>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/cart">
+          <a className="nav-link__gama" href="/cart">
             <i className="material-icons">shopping_cart</i>
           </a>
         </li>

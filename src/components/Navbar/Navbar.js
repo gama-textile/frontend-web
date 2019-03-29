@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 
-/* import css */
+/*
+ * import css
+ * css custom field__name
+ */
 import "./Navbar.css";
 
 /* import component */
@@ -10,22 +13,24 @@ import NavbarNavigation from "../NavbarNavigation/NavbarNavigation";
 class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light shadow-sm p-2">
-        <div className="navbar-collapse collapse w-50 order-1 order-md-0 dual-collapse2">
-          <div className="navbar-nav mr-auto">
-            <div className="logo-container ml-5">
-              <img className="img-fluid" src="img/logo.png" alt="logo" />
-            </div>
-            <a className="navbar-brand mx-auto" href="/">
-              GAMA TEXTILE
-            </a>
-          </div>
-        </div>
+      <nav className="navbar navbar-expand-lg navbar-light navbar__gama ">
+        <img src="img/logo.png" className="logo__container" alt="logo gama" />
+        <a href="/" className="navbar__branch__gama">
+          Gama Textile
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#menu__navbar__gama"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
 
-        <div className="mx-auto order-0 w-100">
-          <SearchInput />
-        </div>
-        <div className="navbar-collapse collapse w-50 order-3 dual-collapse2">
+        <div className="collapse navbar-collapse" id="menu__navbar__gama">
+          <div className="col-md-7">
+            <SearchInput />
+          </div>
           <NavbarNavigation />
         </div>
       </nav>

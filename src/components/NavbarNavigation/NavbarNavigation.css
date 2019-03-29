@@ -1,4 +1,10 @@
-.nav-link {
-  color: var(--mainColor) !important;
+/* nav li */
+.nav__li__gama li {
+  /* margin-left: 10px; */
+  margin-right: 20px;
+}
+
+.nav-link__gama {
+  color: #fd6ea8;
   font-weight: bold;
 }
