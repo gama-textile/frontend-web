@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /* import css Navbar Navigation */
 import "./NavbarNavigation.css";
@@ -9,34 +9,34 @@ class NavbarNavigation extends Component {
     return (
       <ul className="navbar-nav ml-auto nav__li__gama">
         <li className="nav-item">
-          <a href="/" className="nav-link__gama">
+          <Link to="/katalog" className="nav-link__gama">
             Katalog
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="/" className="nav-link__gama">
+          <Link to="/tentang" className="nav-link__gama">
             Tentang
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a href="/" className="nav-link__gama">
+          <Link to="/daftar-masuk" className="nav-link__gama">
             Daftar | Masuk
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link__gama" href="/">
+          <Link className="nav-link__gama" to="/akun">
             Akun
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link__gama" href="/">
+          <Link className="nav-link__gama" to="/notif">
             <i className="material-icons">notifications</i>
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link__gama" href="/cart">
+          <Link className="nav-link__gama" to="/cart">
             <i className="material-icons">shopping_cart</i>
-          </a>
+          </Link>
         </li>
       </ul>
     );

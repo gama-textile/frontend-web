@@ -4,9 +4,9 @@ import React, { Component } from "react";
 import "./Home.css";
 
 /* import components */
-import Navbar from "../../components/Navbar/Navbar";
+// import Navbar from "../../components/Navbar/Navbar";
 import Carousel from "../../components/Carousel/Carousel";
-import Footer from "../../components/Footer/Footer";
+// import Footer from "../../components/Footer/Footer";
 
 /* import sections */
 import Shopping from "./sections/Shopping/Shopping";
@@ -19,7 +19,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="banner__gradient">
           <Carousel />
           <div className="bottom-arrow" />
@@ -35,7 +35,7 @@ class Home extends Component {
         <MostFavorite />
         <br />
         <OurCollection />
-        <Footer />
+        {/* <Footer /> */}
         <div className="chat-button">
           <a href="/">
             <i className="material-icons chat-icon">chat</i>
