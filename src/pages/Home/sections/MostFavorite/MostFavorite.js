@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 
 /* import css new product */
-import "./NewProduct.css";
+import "./MostFavorite.css";
 
 /* import components */
 import Card from "../../../../components/Card/Card";
 
-class NewProduct extends Component {
+class MostFavorite extends Component {
   render() {
     return (
       <div className="container">
         <div className="row">
           <div className="col-md-4 offset-4">
             <h3 className="text-center text-custom">
-              <b>PRODUK</b> BARU
+              <b>PALING</b> FAVORIT
             </h3>
           </div>
           <div className="col-md-4 text-right">
@@ -34,4 +34,4 @@ class NewProduct extends Component {
   }
 }
 
-export default NewProduct;
+export default MostFavorite;

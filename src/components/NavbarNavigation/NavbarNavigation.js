@@ -10,22 +10,22 @@ class NavbarNavigation extends Component {
       <ul className="navbar-nav ml-auto nav__li__gama">
         <li className="nav-item">
           <a href="/" className="nav-link__gama">
-            Catalog
+            Katalog
           </a>
         </li>
         <li className="nav-item">
           <a href="/" className="nav-link__gama">
-            About
+            Tentang
           </a>
         </li>
         <li className="nav-item">
           <a href="/" className="nav-link__gama">
-            Register | Login
+            Daftar | Masuk
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link__gama" href="/">
-            Account
+            Akun
           </a>
         </li>
         <li className="nav-item">

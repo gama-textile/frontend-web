@@ -18,7 +18,7 @@ code {
   --secondaryColor: #ff758c;
 }
 
-loginButton {
+.loginButton {
   text-align: right;
   border-right: 1px solid white;
   padding-right: 0.1rem;

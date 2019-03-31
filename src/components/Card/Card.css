@@ -1,4 +1,43 @@
-.card__gama {
+.gama__card {
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 0px rgba(226, 26, 143, 0.6);
+}
+
+.gama__card:hover {
+  cursor: pointer;
+}
+
+.gama__card__imagewrapper {
+  position: relative;
+}
+
+.gama__card__actionwrapper {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.gama__card__action {
+  color: #fd6ea8;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.gama__card__action:hover {
+  color: white;
+  background-color: #fd6ea8;
+  cursor: pointer;
+}
+
+.gama__card__body {
+  padding: 10px 10px;
+  margin-top: 1rem;
+  line-height: 0.5rem;
+}
+/* .card__gama {
   background-color: white;
   padding: 5px;
   margin: 5px;
@@ -46,4 +85,4 @@
   padding: 10px 10px;
   margin-top: 1rem;
   line-height: 0.5rem;
-}
+} */

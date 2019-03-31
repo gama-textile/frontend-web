@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 
 /* import css new product */
-import "./NewProduct.css";
+import "./OurCollection.css";
 
 /* import components */
 import Card from "../../../../components/Card/Card";
 
-class NewProduct extends Component {
+class OurCollection extends Component {
   render() {
     return (
       <div className="container">
         <div className="row">
           <div className="col-md-4 offset-4">
             <h3 className="text-center text-custom">
-              <b>PRODUK</b> BARU
+              <b>KOLEKSI</b> KAMI
             </h3>
           </div>
           <div className="col-md-4 text-right">
@@ -27,11 +27,9 @@ class NewProduct extends Component {
           <Card />
           <Card />
         </div>
-        <br />
-        <hr />
       </div>
     );
   }
 }
 
-export default NewProduct;
+export default OurCollection;

@@ -1,7 +1,8 @@
 .banner__gradient {
   position: relative;
-  padding: 2rem 2rem;
-  background-image: linear-gradient(#fd6ea8, #ff758c);
+  /* padding: 2rem 2rem; */
+  /* border: 30px solid #fd6ea8; */
+  /* background-image: linear-gradient(#fd6ea8, #ff758c); */
 }
 
 .bottom-arrow {
@@ -9,7 +10,7 @@
   bottom: -3%;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: var(--secondaryColor);
+  background-color: #fd6ea8;
   position: absolute;
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Safari */
@@ -24,7 +25,7 @@
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: var(--mainColor);
+  background-color: #fd6ea8;
 }
 
 .chat-icon {
