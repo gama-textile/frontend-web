@@ -10,7 +10,12 @@ export default class Card extends Component {
         style={{ width: "17rem", margin: "6px" }}
       >
         <div className="gama__card__imagewrapper">
-          <img className="img-fluid" src="products/gambar_1.jpg" alt="Tulle" />
+          <img
+            className="img-fluid"
+            style={{ width: "95%", height: "100%", margin: "9px" }}
+            src="products/gambar_1.jpg"
+            alt="Tulle"
+          />
           <div className="gama__card__actionwrapper">
             <a className="material-icons gama__card__action" href="/">
               favorite_border

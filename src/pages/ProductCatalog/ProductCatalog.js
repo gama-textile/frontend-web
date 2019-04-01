@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 /* import css catalog */
-import "./Catalog.css";
+import "./ProductCatalog.css";
 
 /* import components */
 // import Card from "./Card";

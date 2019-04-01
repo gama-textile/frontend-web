@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 /* import components */
@@ -6,20 +6,27 @@ import Header from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
 /* import pages */
-import HomePage from "../pages/Home";
-import CatalogPage from "../pages/Catalog/Catalog";
+import Home from "../pages/Home";
+import ProductCatalog from "../pages/ProductCatalog/ProductCatalog";
+import ProductDetail from "../pages/ProductDetail/ProductDetail";
 
 const AppRouter = () => (
   <Router>
-    <div>
-      <Header />
-      <Switch>
-        <Route path="/" component={HomePage} exact={true} />
-
-        <Route path="/katalog-produk" component={CatalogPage} />
-      </Switch>
-      <Footer />
-    </div>
+    <Fragment>
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/katalog-produk" exact component={ProductCatalog} />
+          <Route
+            path="/katalog-produk/product-detail/:id"
+            exact
+            component={ProductDetail}
+          />
+        </Switch>
+        <Footer />
+      </div>
+    </Fragment>
   </Router>
 );
 

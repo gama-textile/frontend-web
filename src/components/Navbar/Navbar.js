@@ -14,7 +14,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light navbar__gama ">
-        <img src="img/logo.png" className="logo__container" alt="logo gama" />
+        <img src="img/logo.png" className="logo__container" alt="logo" />
         <a href="/" className="navbar__branch__gama">
           Gama Textile
         </a>
