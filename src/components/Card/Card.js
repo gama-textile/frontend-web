@@ -5,7 +5,10 @@ import "./Card.css";
 export default class Card extends Component {
   render() {
     return (
-      <div className="card gama__card mt-2">
+      <div
+        className="card gama__card mt-2 center"
+        style={{ width: "17rem", margin: "6px" }}
+      >
         <div className="gama__card__imagewrapper">
           <img className="img-fluid" src="products/gambar_1.jpg" alt="Tulle" />
           <div className="gama__card__actionwrapper">

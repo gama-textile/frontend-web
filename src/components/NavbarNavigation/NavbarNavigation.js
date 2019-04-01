@@ -9,7 +9,7 @@ class NavbarNavigation extends Component {
     return (
       <ul className="navbar-nav ml-auto nav__li__gama">
         <li className="nav-item">
-          <Link to="/katalog" className="nav-link__gama">
+          <Link to="/katalog-produk" className="nav-link__gama">
             Katalog
           </Link>
         </li>

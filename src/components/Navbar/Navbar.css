@@ -27,7 +27,7 @@
 }
 
 /* untuk dibuka dihp */
-@media (max-width: 540px) {
+/* @media (max-width: 540px) {
   .navbar__gama {
     top: 0px;
     margin-top: 0px;
@@ -37,4 +37,4 @@
     background: #f9f9f9;
     z-index: 2;
   }
-}
+} */

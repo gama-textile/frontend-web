@@ -15,10 +15,11 @@ const AppRouter = () => (
       <Header />
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
-        <Route path="/katalog" component={CatalogPage} />
+
+        <Route path="/katalog-produk" component={CatalogPage} />
       </Switch>
+      <Footer />
     </div>
-    <Footer />
   </Router>
 );
 
