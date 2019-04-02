@@ -1,42 +1,47 @@
-import React, { Component } from "react";
+import React from "react";
 
 import "./Card.css";
-
-export default class Card extends Component {
-  render() {
+export default function Card({ catalogProducts }) {
+  if (catalogProducts == null) {
     return (
-      <div
-        className="card gama__card mt-2 center"
-        style={{ width: "17rem", margin: "6px" }}
-      >
-        <div className="gama__card__imagewrapper">
-          <img
-            className="img-fluid"
-            style={{ width: "95%", height: "100%", margin: "9px" }}
-            src="products/gambar_1.jpg"
-            alt="Tulle"
-          />
-          <div className="gama__card__actionwrapper">
-            <a className="material-icons gama__card__action" href="/">
-              favorite_border
-            </a>
-            <a className="material-icons gama__card__action" href="/">
-              add_shopping_cart
-            </a>
-          </div>
-        </div>
-
-        <div className="gama__card__body card-body">
-          <p className="product__title card-text">
-            {/* {product.Product.name} - {product.Product.id} */}
-            Kain - 001
-          </p>
-          <p className="product__price">Rp. 100.000</p>
-        </div>
+      <div>
+        <p>Loading ...</p>
       </div>
     );
   }
+
+  return (
+    <div
+      className="card gama__card mt-2 center"
+      style={{ width: "17rem", margin: "6px" }}
+    >
+      <div className="gama__card__imagewrapper">
+        <img
+          className="img-fluid"
+          style={{ width: "95%", height: "100%", margin: "9px" }}
+          src="products/gambar_1.jpg"
+          alt="Tulle"
+        />
+        <div className="gama__card__actionwrapper">
+          <a className="material-icons gama__card__action" href="/">
+            favorite_border
+          </a>
+          <a className="material-icons gama__card__action" href="/">
+            add_shopping_cart
+          </a>
+        </div>
+      </div>
+
+      <div className="gama__card__body card-body">
+        <p className="product__title card-text">
+          {catalogProducts.Product.name} - {catalogProducts.Product.id}
+        </p>
+        <p className="product__price">Rp. {catalogProducts.price}</p>
+      </div>
+    </div>
+  );
 }
+
 // import React, { Component } from "react";
 
 // /* import css cart */

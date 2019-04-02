@@ -28,7 +28,7 @@ export default class ProductDetailFooter extends Component {
               aria-controls="profile"
               aria-selected="false"
             >
-              Profile
+              Review
             </a>
           </li>
           <li className="nav-item">
@@ -41,7 +41,7 @@ export default class ProductDetailFooter extends Component {
               aria-controls="contact"
               aria-selected="false"
             >
-              Contact
+              Q&A
             </a>
           </li>
         </ul>
