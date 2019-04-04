@@ -1,0 +1,23 @@
+.account-address {
+  padding: 1.5rem;
+  border: 1px solid var(--mainColor);
+  border-radius: 5px;
+  height: auto;
+}
+
+.header p {
+  float: left;
+}
+
+.header button {
+  float: right;
+}
+.header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+table {
+  width: 100%;
+}

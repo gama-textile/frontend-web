@@ -8,6 +8,9 @@ import AppRouter from "./routers/AppRouter";
 import { Provider } from "react-redux";
 import store from "./store";
 
+/* import css custom assets */
+import "./assets/Custom.css";
+
 ReactDOM.render(
   <Provider store={store}>
     <AppRouter />

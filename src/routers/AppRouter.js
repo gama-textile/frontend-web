@@ -9,6 +9,7 @@ import Footer from "../components/Footer/Footer";
 import Home from "../pages/Home";
 import ProductCatalog from "../pages/ProductCatalog/ProductCatalog";
 import ProductDetail from "../pages/ProductDetail/ProductDetail";
+import Account from "../pages/Account/Account";
 
 const AppRouter = () => (
   <Router>
@@ -17,12 +18,12 @@ const AppRouter = () => (
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/katalog-produk" exact component={ProductCatalog} />
+          <Route path="/product-catalog" exact component={ProductCatalog} />
           <Route
-            path="/katalog-produk/product-detail/:id"
-            exact
+            path="/product-catalog/details/:id"
             component={ProductDetail}
           />
+          <Route path="/account" exact component={Account} />
         </Switch>
         <Footer />
       </div>

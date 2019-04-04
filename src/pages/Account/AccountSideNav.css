@@ -1,0 +1,63 @@
+.sidebar {
+}
+
+.header {
+}
+
+.header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.picture {
+  float: left;
+  width: 65px;
+  padding: 5px;
+}
+
+.desc {
+  margin-top: 15px;
+  float: left;
+  line-height: 0.5rem;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.mainUl {
+  list-style-type: none;
+  line-height: 2rem;
+}
+
+.mainUl li {
+  margin-bottom: 0.5rem;
+  padding: 3px 3px;
+}
+
+.mainUl li a {
+  display: inline-block;
+  color: var(--mainColor);
+  font-size: 1.2rem;
+  width: 100%;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mainUl li a i {
+  font-size: 1rem;
+}
+
+.mainUl li a:hover {
+  background-color: var(--mainColor);
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.secondUl {
+  list-style-type: none;
+}

@@ -2,7 +2,12 @@ import React, { Component } from "react";
 
 /* import compnents */
 import PlusMinus from "../../components/PlusMinus/PlusMinus";
+
 export default class ProductDetailInteract extends Component {
+  hanldeQuantityValue = qty => {
+    this.setState({ length_per_meter: qty });
+  };
+
   render() {
     return (
       <div className="col">
@@ -13,7 +18,7 @@ export default class ProductDetailInteract extends Component {
             <hr />
             <p>Order Quantity</p>
             <div style={{ width: "50%" }}>
-              <PlusMinus />
+              <PlusMinus onChangeValue={this.hanldeQuantityValue} />
             </div>
             <p>Stok : 10 meter</p>
             <p>Color : Lavender</p>

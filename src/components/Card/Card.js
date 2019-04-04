@@ -1,8 +1,9 @@
 import React from "react";
 
 import "./Card.css";
-export default function Card({ catalogProducts }) {
-  if (catalogProducts == null) {
+export default function Card({ catalogProduct, handleClick }) {
+  console.log(catalogProduct + "  hello");
+  if (catalogProduct == null || handleClick != null) {
     return (
       <div>
         <p>Loading ...</p>
@@ -12,7 +13,8 @@ export default function Card({ catalogProducts }) {
 
   return (
     <div
-      className="card gama__card mt-2 center"
+      onClick={() => handleClick(catalogProduct.id)}
+      className="card gama__card mt-2"
       style={{ width: "17rem", margin: "6px" }}
     >
       <div className="gama__card__imagewrapper">
@@ -20,8 +22,12 @@ export default function Card({ catalogProducts }) {
           className="img-fluid"
           style={{ width: "95%", height: "100%", margin: "9px" }}
           src="products/gambar_1.jpg"
+          // src={
+          //   "https://cf.shopee.co.id/file/98c92b4b2d800dc10af37158706a71ac_tn"
+          // }
           alt="Tulle"
         />
+
         <div className="gama__card__actionwrapper">
           <a className="material-icons gama__card__action" href="/">
             favorite_border
@@ -34,9 +40,9 @@ export default function Card({ catalogProducts }) {
 
       <div className="gama__card__body card-body">
         <p className="product__title card-text">
-          {catalogProducts.Product.name} - {catalogProducts.Product.id}
+          {catalogProduct.Product.name} - {catalogProduct.Product.id}
         </p>
-        <p className="product__price">Rp. {catalogProducts.price}</p>
+        <p className="product__price">Rp. {catalogProduct.price}</p>
       </div>
     </div>
   );

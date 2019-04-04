@@ -1,0 +1,79 @@
+:root {
+    --mainColor: #fd6ea8;
+    --secondaryColor: #ff758c;
+  }
+  
+  .loginButton {
+    text-align: right;
+    border-right: 1px solid white;
+    padding-right: 0.1rem;
+  }
+  
+  .registerButton {
+    padding-left: 0.1rem;
+  }
+  
+  .card-action {
+    position: absolute;
+    right: 0;
+    top: 65%;
+  }
+  
+  .card-action button {
+    background-color: white;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  
+  #footer {
+    background-color: antiquewhite;
+    padding: 3rem;
+  }
+  
+  .product-body {
+    padding: 0px 50px;
+  }
+  
+  .image-viewer {
+    max-height: 70vh;
+  }
+  
+  .image-viewer-imagelist {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    row-gap: 10px;
+  }
+  
+  .image-viewer-item {
+    max-height: 80px;
+    max-width: 80px;
+  }
+  
+  .product-catalog {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+  }
+  
+  .displayInline {
+    display: flex;
+    direction: row;
+    align-items: center;
+  }
+  
+  .displayInline .items {
+    margin-left: 10px;
+  }
+  
+  .pluminuscontrol {
+    max-width: 180px;
+  }
+  
+  .logo-container {
+    width: 2.5rem;
+  }
+  
