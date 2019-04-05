@@ -23,7 +23,7 @@ const AppRouter = () => (
             path="/product-catalog/details/:id"
             component={ProductDetail}
           />
-          <Route path="/account" exact component={Account} />
+          <Route path="/account/:id" exact component={Account} />
         </Switch>
         <Footer />
       </div>

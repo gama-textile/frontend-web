@@ -6,10 +6,10 @@ class AccountSetting extends Component {
   render() {
     return (
       <div className="account-setting">
-        <form class="form-inline">
+        <form className="form-inline">
           <div className="left">
             <div className="form-group">
-              <label for="displayName">Display Name</label>
+              <label htmlFor="displayName">Display Name</label>
               <input
                 type="text"
                 id="displayName"
@@ -17,7 +17,7 @@ class AccountSetting extends Component {
               />
             </div>
             <div className="form-group">
-              <label for="phoneNumber">Phone Number</label>
+              <label htmlFor="phoneNumber">Phone Number</label>
               <input
                 type="text"
                 id="phoneNumber"
@@ -25,12 +25,12 @@ class AccountSetting extends Component {
               />
             </div>
             <div className="form-group">
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input type="text" id="email" className="form-control mx-sm-3" />
             </div>
 
             <div className="form-group">
-              <label for="oldPassword">Old Password</label>
+              <label htmlFor="oldPassword">Old Password</label>
               <input
                 type="password"
                 id="oldPassword"
@@ -38,7 +38,7 @@ class AccountSetting extends Component {
               />
             </div>
             <div className="form-group">
-              <label for="newPassword">New Password</label>
+              <label htmlFor="newPassword">New Password</label>
               <input
                 type="password"
                 id="newPassword"
@@ -46,7 +46,7 @@ class AccountSetting extends Component {
               />
             </div>
             <div className="form-group">
-              <label for="confirmPassword">Confirm Password</label>
+              <label htmlFor="confirmPassword">Confirm Password</label>
               <input
                 type="password"
                 id="confirmPassword"

@@ -9,6 +9,7 @@ import AccountSetting from "./AccountSetting";
 import AccountAddress from "./AccountAddress/AccountAddress";
 /* import redux */
 import { connect } from "react-redux";
+import { getCustomerData } from "../../actions/customers";
 
 export class Account extends Component {
   state = {
@@ -23,6 +24,12 @@ export class Account extends Component {
       }
     ]
   };
+
+  componentDidMount() {
+    const { id } = this.props.match.params;
+    this.props.getCustomerData(id);
+  }
+
   render() {
     return (
       <Fragment>
@@ -35,7 +42,7 @@ export class Account extends Component {
         <div className="container mt-5">
           <div className="row">
             <div className="col-md-3">
-              <AccountSideNav />
+              <AccountSideNav customer={this.props.customer} />
             </div>
             <div className="col-md-9">
               <Switch>
@@ -58,11 +65,13 @@ export class Account extends Component {
   }
 }
 
-const mapStateToProps = state => ({});
-
-const mapDispatchToProps = {};
+const mapStateToProps = state => ({
+  customer: state.customerReducers.customers
+});
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  {
+    getCustomerData
+  }
 )(Account);

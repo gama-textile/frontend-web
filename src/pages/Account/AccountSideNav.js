@@ -14,8 +14,7 @@ class AccountSideNav extends Component {
           <img className="img-fluid picture" alt="foto" src="img/logo.png" />
           <div className="desc">
             <p className="name">
-              {/* {this.props.customer.firstName} {this.props.customer.lastName} */}
-              elfin sanjaya
+              {this.props.customer.firstName} {this.props.customer.lastName}
             </p>
             <br />
             <p className="status">Customer</p>
