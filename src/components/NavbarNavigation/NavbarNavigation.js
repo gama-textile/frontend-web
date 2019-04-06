@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 /* import css Navbar Navigation */
 import "./NavbarNavigation.css";
 
+/* import components */
+import Modal from "../Modal/Modal";
+
 class NavbarNavigation extends Component {
   render() {
     return (
@@ -19,9 +22,14 @@ class NavbarNavigation extends Component {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/daftar-masuk" className="nav-link__gama">
-            Daftar | Masuk
-          </Link>
+          <button
+            type="button"
+            className="nav-link__gama"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Daftar | Masuk <Modal />
+          </button>
         </li>
         <li className="nav-item">
           <Link className="nav-link__gama" to="/account">

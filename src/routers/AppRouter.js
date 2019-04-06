@@ -10,6 +10,8 @@ import Home from "../pages/Home";
 import ProductCatalog from "../pages/ProductCatalog/ProductCatalog";
 import ProductDetail from "../pages/ProductDetail/ProductDetail";
 import Account from "../pages/Account/Account";
+import RegisterLogin from "../pages/RegisterLogin/RegisterLogin";
+import Cart from "../pages/Cart/Cart";
 
 const AppRouter = () => (
   <Router>
@@ -24,6 +26,8 @@ const AppRouter = () => (
             component={ProductDetail}
           />
           <Route path="/account/:id" exact component={Account} />
+          <Route path="/register-login" component={RegisterLogin} />
+          <Route path="/cart" component={Cart} />
         </Switch>
         <Footer />
       </div>
