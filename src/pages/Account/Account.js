@@ -20,7 +20,7 @@ export class Account extends Component {
       },
       {
         name: "My Account",
-        url: "/account/address"
+        url: "/account/1"
       }
     ]
   };
@@ -33,9 +33,6 @@ export class Account extends Component {
   render() {
     return (
       <Fragment>
-        <br />
-        <br />
-        <br />
         <div className="container-fluid mt-2">
           <Breadcum breadcumPath={this.state.breadcumPath} />
         </div>

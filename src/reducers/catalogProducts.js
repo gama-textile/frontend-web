@@ -1,7 +1,8 @@
-import { GET_CATALOGPRODUCTS } from "../actions/types";
+import { GET_CATALOGPRODUCTS, GET_CATALOGPRODUCT } from "../actions/types";
 
 const initialState = {
-  catalogProducts: []
+  catalogProducts: [],
+  catalogProduct: {}
 };
 
 export default (state = initialState, action) => {
@@ -10,6 +11,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         catalogProducts: action.payload
+      };
+    case GET_CATALOGPRODUCT:
+      return {
+        ...state,
+        catalogProduct: action.payload
       };
     default:
       return state;

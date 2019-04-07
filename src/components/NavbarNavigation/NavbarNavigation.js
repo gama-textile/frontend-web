@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./NavbarNavigation.css";
 
 /* import components */
-import Modal from "../Modal/Modal";
+// import Modal from "../Modal/Modal";
 
 class NavbarNavigation extends Component {
   render() {
@@ -28,7 +28,7 @@ class NavbarNavigation extends Component {
             data-toggle="modal"
             data-target="#exampleModal"
           >
-            Daftar | Masuk <Modal />
+            Daftar | Masuk
           </button>
         </li>
         <li className="nav-item">

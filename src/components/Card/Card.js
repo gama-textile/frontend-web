@@ -2,8 +2,7 @@ import React from "react";
 
 import "./Card.css";
 export default function Card({ catalogProduct, handleClick }) {
-  console.log(catalogProduct + "  hello");
-  if (catalogProduct == null || handleClick != null) {
+  if (catalogProduct == null) {
     return (
       <div>
         <p>Loading ...</p>
@@ -12,6 +11,22 @@ export default function Card({ catalogProduct, handleClick }) {
   }
 
   return (
+    // <div className="g-card mt-2" onClick={() => handleClick(catalogProduct.id)}>
+    //   <div className="g-card-imagewrapper">
+    //     <img className="img-fluid" src="img/logo.png" alt="Tulle" />
+    //     <div className="g-card-actionwrapper">
+    //       <a className="material-icons g-card-action">favorite_border</a>
+    //       <a className="material-icons g-card-action">add_shopping_cart</a>
+    //     </div>
+    //   </div>
+
+    //   <div className="g-card-body">
+    //     <p className="product-title">
+    //       {catalogProduct.Product.name} - {catalogProduct.Product.id}
+    //     </p>
+    //     <p className="product-price">{catalogProduct.price}</p>
+    //   </div>
+    // </div>
     <div
       onClick={() => handleClick(catalogProduct.id)}
       className="card gama__card mt-2"

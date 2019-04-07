@@ -1,6 +1,6 @@
 // Catalog-products
 export const GET_CATALOGPRODUCTS = "GET_CATALOGPRODUCTS";
-
+export const GET_CATALOGPRODUCT = "GET_CATALOGPRODUCT";
 // Addresses
 export const GET_ADDRESSES = "GET_ADDRESSES";
 

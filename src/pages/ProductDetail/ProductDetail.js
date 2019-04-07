@@ -3,23 +3,56 @@ import React, { Component, Fragment } from "react";
 /* import css product detail */
 import "./ProductDetail.css";
 
+/* import components */
+import Breadcum from "../../components/Breadcum/Breadcum";
+
+/* import pages */
 import ImageViewer from "./ImageViewer";
 import ProductDetailInteract from "./ProductDetailInteract";
 import ProductDetailFooter from "./ProductDetailFooter";
-export default class ProductDetail extends Component {
+
+/* redux */
+import { connect } from "react-redux";
+import { getSingleCatalogProduct } from "../../actions/catalogProducts";
+class ProductDetail extends Component {
+  state = {
+    breadcumPath: [
+      {
+        name: "Katalog",
+        url: "/product-catalog"
+      },
+      {
+        name: "List Produk",
+        url: "/product-catalog"
+      },
+      {
+        name: "Produk Detail"
+        // url: `/product-catalog/details/${id}`
+      }
+    ]
+  };
+
+  componentDidMount() {
+    const { id } = this.props.match.params;
+    this.props.getSingleCatalogProduct(id);
+  }
+
   render() {
     return (
       <Fragment>
-        <br />
-        <br />
-        <br />
+        <div className="container-fluid mt-2" style={{ marginLeft: "100px" }}>
+          <Breadcum breadcumPath={this.state.breadcumPath} />
+        </div>
+
         <div className="container">
           <div className="row">
             <div className="col-md-7">
               <ImageViewer />
             </div>
             <div className="col-md-5">
-              <ProductDetailInteract />
+              <ProductDetailInteract
+                catalogProduct={this.props.catalogProduct}
+              />
             </div>
           </div>
           <br />
@@ -28,40 +61,17 @@ export default class ProductDetail extends Component {
           </div>
         </div>
       </Fragment>
-      //   <div className="container">
-      //     <br />
-      //     <br />
-      //     <br />
-      //     <div className="row">
-      //       <div className="col-md-7">
-      //         <div className="card">
-      //           <img src="..." className="card-img-top" alt="..." />
-      //           <div className="card-body">
-      //             <h5 className="card-title">Card title</h5>
-      //             <p className="card-text">
-      //               Some quick example text to build on the card title and make up
-      //               the bulk of the card's content.
-      //             </p>
-      //             <a href="/" className="btn btn-primary">
-      //               Go somewhere
-      //             </a>
-      //           </div>
-      //         </div>
-      //       </div>
-
-      //       <div className="col-md-5">
-      //         <div className="card">
-      //           <div className="card-body">
-      //             <h5 className="card-title">Card title</h5>
-      //             <p className="card-text">
-      //               Some quick example text to build on the card title and make up
-      //               the bulk of the card's content.
-      //             </p>
-      //           </div>
-      //         </div>
-      //       </div>
-      //     </div>
-      //   </div>
     );
   }
 }
+
+const mapStateToProps = state => ({
+  catalogProduct: state.catalogProductsReducers.catalogProduct
+});
+
+export default connect(
+  mapStateToProps,
+  {
+    getSingleCatalogProduct
+  }
+)(ProductDetail);

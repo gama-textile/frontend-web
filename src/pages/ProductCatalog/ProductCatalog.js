@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-/* import css catalog */
-import "./ProductCatalog.css";
 
 /* import components */
 import Breadcum from "../../components/Breadcum/Breadcum";
@@ -15,7 +13,11 @@ class ProductCatalog extends Component {
   state = {
     breadcumPath: [
       {
-        name: "Produk Katalog",
+        name: "Katalog",
+        url: "/product-catalog"
+      },
+      {
+        name: "List Produk",
         url: "/product-catalog"
       }
     ]
@@ -24,17 +26,15 @@ class ProductCatalog extends Component {
   componentDidMount() {
     this.props.getCatalogProducts();
   }
+
   render() {
     return (
-      <div className="container">
-        <br />
-        <br />
-        <br />
-        <div className="container-fluid mt-2">
+      <div>
+        <div className="container-fluid mt-2" style={{ marginLeft: "110px" }}>
           <Breadcum breadcumPath={this.state.breadcumPath} />
         </div>
-        <hr />
-        <div className="row">
+
+        <div className="container">
           <CatalogProductList catalogProducts={this.props.catalogProducts} />
         </div>
       </div>

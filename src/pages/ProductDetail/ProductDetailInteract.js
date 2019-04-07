@@ -3,18 +3,33 @@ import React, { Component } from "react";
 /* import compnents */
 import PlusMinus from "../../components/PlusMinus/PlusMinus";
 
-export default class ProductDetailInteract extends Component {
+class ProductDetailInteract extends Component {
+  state = {
+    productInboundId: this.props.catalogProduct.id,
+    customerId: 1,
+    note: "",
+    length_per_meter: 1
+  };
   hanldeQuantityValue = qty => {
     this.setState({ length_per_meter: qty });
   };
 
   render() {
+    const product = {
+      name: null,
+      price: null
+    };
+
+    if (this.props.catalogProduct.Product) {
+      product.name = this.props.catalogProduct.Product.name;
+      product.price = this.props.catalogProduct.price;
+    }
     return (
       <div className="col">
         <div className="card">
           <div className="card-body">
-            <h5 className="card-title">Nama Produk dan - Code</h5>
-            <p className="card-text">Rp. 1.000.000</p>
+            <h5 className="card-title">{product.name} - </h5>
+            <p className="card-text">Rp. {product.price}</p>
             <hr />
             <p>Order Quantity</p>
             <div style={{ width: "50%" }}>
@@ -34,3 +49,5 @@ export default class ProductDetailInteract extends Component {
     );
   }
 }
+
+export default ProductDetailInteract;

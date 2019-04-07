@@ -19,7 +19,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-        {/* <Navbar /> */}
         <div className="banner__gradient">
           <Carousel />
           <div className="bottom-arrow" />

@@ -7,10 +7,6 @@ class Cart extends Component {
   render() {
     return (
       <div>
-        <br />
-        <br />
-        <br />
-        <br />
         <div className="container">
           <table className="table">
             <thead>

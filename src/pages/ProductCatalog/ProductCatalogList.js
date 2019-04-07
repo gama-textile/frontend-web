@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import Card from "../../components/Card/Card";
 
-// import "./ProductCatalogList.css";
+/* import css catalog */
+import "./ProductCatalog.css";
 
 class ProductCatalogList extends Component {
   __handleCatalogProductDetail = id => {
     const { history } = this.props;
-    history.push(`/katalog-produk/details/1`);
+    history.push(`/product-catalog/details/${id}`);
   };
 
   render() {
@@ -18,7 +19,7 @@ class ProductCatalogList extends Component {
             <Card
               key={index}
               catalogProduct={catalogProduct}
-              handleClick={this.__handleCatalogProductDetai}
+              handleClick={this.__handleCatalogProductDetail}
             />
           );
         })}
