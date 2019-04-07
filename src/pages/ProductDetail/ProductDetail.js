@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
 /* import css product detail */
 import "./ProductDetail.css";
@@ -39,12 +39,15 @@ class ProductDetail extends Component {
 
   render() {
     return (
-      <Fragment>
-        <div className="container-fluid mt-2" style={{ marginLeft: "100px" }}>
+      <div>
+        <div
+          className="container-fluid"
+          style={{ marginTop: "15px", marginLeft: "40px" }}
+        >
           <Breadcum breadcumPath={this.state.breadcumPath} />
         </div>
 
-        <div className="container">
+        <div className="container" style={{ marginTop: "15px" }}>
           <div className="row">
             <div className="col-md-7">
               <ImageViewer />
@@ -60,7 +63,7 @@ class ProductDetail extends Component {
             <ProductDetailFooter />
           </div>
         </div>
-      </Fragment>
+      </div>
     );
   }
 }

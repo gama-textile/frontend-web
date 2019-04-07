@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class ProductDetailFooter extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div>
         <ul className="nav nav-tabs" id="myTab" role="tablist">
           <li className="nav-item">
             <a
@@ -45,7 +45,11 @@ export default class ProductDetailFooter extends Component {
             </a>
           </li>
         </ul>
-        <div className="tab-content" id="myTabContent">
+        <div
+          className="tab-content  border"
+          id="myTabContent"
+          style={{ padding: "20px" }}
+        >
           <div
             className="tab-pane fade show active"
             id="home"

@@ -26,7 +26,7 @@ const AppRouter = () => (
             path="/product-catalog/details/:id"
             component={ProductDetail}
           />
-          <Route path="/account/:id" exact component={Account} />
+          <Route path="/account/:id" component={Account} />
           <Route path="/register-login" component={RegisterLogin} />
           <Route path="/cart" component={Cart} />
         </Switch>

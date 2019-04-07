@@ -10,9 +10,21 @@ export default function AccountAddressItem(props) {
       <tr className="firstrow">
         <td>Name</td>
         <td>{name}</td>
-        <td>
-          <button className="btn btn-default">Delete</button>
-          <button className="btn btn-info">Edit</button>
+        <td className="text-right">
+          <button
+            className="btn btn-outline-danger"
+            type="button"
+            style={{ margin: "5px" }}
+          >
+            Delete
+          </button>
+          <button
+            className="btn btn-outline-danger"
+            type="button"
+            style={{ margin: "5px" }}
+          >
+            Edit
+          </button>
         </td>
       </tr>
       <tr>

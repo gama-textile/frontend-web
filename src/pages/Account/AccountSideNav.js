@@ -8,10 +8,16 @@ class AccountSideNav extends Component {
   };
 
   render() {
+    // nanti di ganti dengan idCustomer
+    const id = 1;
     return (
       <div className="sidebar">
         <div className="header">
-          <img className="img-fluid picture" alt="foto" src="img/logo.png" />
+          <img
+            className="img-fluid picture"
+            alt="foto"
+            src="https://via.placeholder.com/150"
+          />
           <div className="desc">
             <p className="name">
               {this.props.customer.firstName} {this.props.customer.lastName}
@@ -29,10 +35,10 @@ class AccountSideNav extends Component {
               </a>
               <ul className="secondUl">
                 <li>
-                  <Link to="/account/1">Account Setting</Link>
+                  <Link to={`/account/${id}`}>Account Setting</Link>
                 </li>
                 <li>
-                  <Link to="/account/1/address">Address Setting</Link>
+                  <Link to={`/account/${id}/address`}>Address Setting</Link>
                 </li>
                 <li>
                   <a href="/">Help Center</a>
@@ -40,9 +46,9 @@ class AccountSideNav extends Component {
               </ul>
             </li>
             <li>
-              <a href="#about">
+              <Link to={`/account/${id}/transaction`}>
                 <i className="material-icons">panorama_fish_eye</i> Transaction
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#services">

@@ -10,6 +10,7 @@ import AccountAddressItem from "./AccountAddressItem";
 class AccountAddress extends Component {
   componentDidMount() {
     this.props.getCustomerAddress(1);
+    console.log("masuk akun address");
   }
 
   render() {
@@ -17,13 +18,13 @@ class AccountAddress extends Component {
       <div className="account-address">
         <div className="header">
           <p>My Address</p>
-          <button className="btn btn-primary">+ Add New Address</button>
+          <button className="btn btn-danger">+ Add New Address</button>
         </div>
         <div className="body mt-3">
           <table>
             <tbody>
-              {this.props.addresses.map(address => {
-                return <AccountAddressItem address={address} />;
+              {this.props.addresses.map((address, index) => {
+                return <AccountAddressItem key={index} address={address} />;
               })}
             </tbody>
           </table>

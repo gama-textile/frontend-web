@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 /* import compnents */
 import PlusMinus from "../../components/PlusMinus/PlusMinus";
@@ -25,27 +25,33 @@ class ProductDetailInteract extends Component {
       product.price = this.props.catalogProduct.price;
     }
     return (
-      <div className="col">
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">{product.name} - </h5>
-            <p className="card-text">Rp. {product.price}</p>
-            <hr />
-            <p>Order Quantity</p>
-            <div style={{ width: "50%" }}>
-              <PlusMinus onChangeValue={this.hanldeQuantityValue} />
+      <Fragment>
+        <div className="col">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">{product.name} - </h5>
+              <p className="card-text">Rp. {product.price}</p>
+              <hr />
+              <p>Order Quantity</p>
+              <div style={{ width: "50%" }}>
+                <PlusMinus onChangeValue={this.hanldeQuantityValue} />
+              </div>
+              <p>Stok : 10 meter</p>
+              <p>Color : Lavender</p>
+              <a href="/" className="btn btn-primary">
+                Add to Wishlist
+              </a>
+              <a
+                href="/"
+                className="btn btn-primary"
+                style={{ margin: "10px" }}
+              >
+                Add to Wishlist
+              </a>
             </div>
-            <p>Stok : 10 meter</p>
-            <p>Color : Lavender</p>
-            <a href="/" className="btn btn-primary">
-              Add to Wishlist
-            </a>
-            <a href="/" className="btn btn-primary" style={{ margin: "10px" }}>
-              Add to Wishlist
-            </a>
           </div>
         </div>
-      </div>
+      </Fragment>
     );
   }
 }

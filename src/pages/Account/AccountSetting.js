@@ -8,45 +8,62 @@ class AccountSetting extends Component {
       <div className="account-setting">
         <form className="form-inline">
           <div className="left">
-            <div className="form-group">
-              <label htmlFor="displayName">Display Name</label>
+            <div className="form-group row">
+              <label htmlFor="displayName" className="col-sm-4 col-form-label">
+                Display Name
+              </label>
               <input
                 type="text"
                 id="displayName"
                 className="form-control mx-sm-3"
               />
             </div>
-            <div className="form-group">
-              <label htmlFor="phoneNumber">Phone Number</label>
+
+            <div className="form-group row">
+              <label htmlFor="phoneNumber" className="col-sm-4 col-form-label">
+                Phone Number
+              </label>
+
               <input
                 type="text"
                 id="phoneNumber"
                 className="form-control mx-sm-3"
               />
             </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
+            <div className="form-group row">
+              <label htmlFor="email" className="col-sm-4 col-form-label">
+                Email
+              </label>
               <input type="text" id="email" className="form-control mx-sm-3" />
             </div>
 
-            <div className="form-group">
-              <label htmlFor="oldPassword">Old Password</label>
+            <div className="form-group row">
+              <label htmlFor="oldPassword" className="col-sm-4 col-form-label">
+                Old Password
+              </label>
               <input
                 type="password"
                 id="oldPassword"
                 className="form-control mx-sm-3"
               />
             </div>
-            <div className="form-group">
-              <label htmlFor="newPassword">New Password</label>
+            <div className="form-group row">
+              <label htmlFor="newPassword" className="col-sm-4 col-form-label">
+                New Password
+              </label>
               <input
                 type="password"
                 id="newPassword"
                 className="form-control mx-sm-3"
               />
             </div>
-            <div className="form-group">
-              <label htmlFor="confirmPassword">Confirm Password</label>
+            <div className="form-group row">
+              <label
+                htmlFor="confirmPassword"
+                className="col-sm-4 col-form-label"
+              >
+                Confirm Password
+              </label>
               <input
                 type="password"
                 id="confirmPassword"
@@ -63,11 +80,24 @@ class AccountSetting extends Component {
                 src="http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
               />
 
-              <button className="btn btn-primary">Change Picture</button>
+              <button className="btn btn-outline-danger">Change Picture</button>
             </div>
             <div className="btn-container">
-              <button className="btn btn-default">Cancel</button>
-              <button className="btn btn-primary">Save</button>
+              <button
+                className="btn btn-outline-danger"
+                type="button"
+                style={{ margin: "5px" }}
+              >
+                Cancel
+              </button>
+
+              <button
+                className="btn btn-danger"
+                type="button"
+                style={{ margin: "5px" }}
+              >
+                Save
+              </button>
             </div>
           </div>
         </form>

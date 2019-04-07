@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 /* import components */
 import Breadcum from "../../components/Breadcum/Breadcum";
+
 /* import pages */
 import CatalogProductList from "./ProductCatalogList";
 
@@ -30,11 +31,33 @@ class ProductCatalog extends Component {
   render() {
     return (
       <div>
-        <div className="container-fluid mt-2" style={{ marginLeft: "110px" }}>
+        <div
+          className="container-fluid"
+          style={{ marginTop: "15px", marginLeft: "40px" }}
+        >
           <Breadcum breadcumPath={this.state.breadcumPath} />
         </div>
 
-        <div className="container">
+        <div
+          style={{ marginTop: "10px", marginLeft: "40px", marginRight: "20px" }}
+        >
+          <CatalogProductList catalogProducts={this.props.catalogProducts} />
+        </div>
+
+        {/* nanti di delete ini hanya buat nyoba */}
+        <div
+          style={{ marginTop: "10px", marginLeft: "40px", marginRight: "20px" }}
+        >
+          <CatalogProductList catalogProducts={this.props.catalogProducts} />
+        </div>
+        <div
+          style={{ marginTop: "10px", marginLeft: "40px", marginRight: "20px" }}
+        >
+          <CatalogProductList catalogProducts={this.props.catalogProducts} />
+        </div>
+        <div
+          style={{ marginTop: "10px", marginLeft: "40px", marginRight: "20px" }}
+        >
           <CatalogProductList catalogProducts={this.props.catalogProducts} />
         </div>
       </div>
