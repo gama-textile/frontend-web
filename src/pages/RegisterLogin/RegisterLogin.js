@@ -4,10 +4,6 @@ export default class RegisterLogin extends Component {
   render() {
     return (
       <div>
-        <br />
-        <br />
-        <br />
-
         <button
           type="button"
           className="btn btn-primary"

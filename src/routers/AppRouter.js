@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 /* import components */
 import Header from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import Modal from "../components/Modal/Modal";
 
 /* import pages */
 import Home from "../pages/Home";
@@ -30,6 +31,7 @@ const AppRouter = () => (
           <Route path="/register-login" component={RegisterLogin} />
           <Route path="/cart" component={Cart} />
         </Switch>
+        <Modal />
         <Footer />
       </div>
     </Fragment>

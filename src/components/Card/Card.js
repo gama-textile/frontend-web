@@ -36,7 +36,7 @@ export default function Card({ catalogProduct, handleClick }) {
         <img
           className="img-fluid"
           style={{ width: "95%", height: "100%", margin: "9px" }}
-          src="products/gambar_1.jpg"
+          src={catalogProduct.Product.imageUrl}
           // src={
           //   "https://cf.shopee.co.id/file/98c92b4b2d800dc10af37158706a71ac_tn"
           // }
